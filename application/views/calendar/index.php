@@ -169,7 +169,7 @@ $(document).ready(function() {
         },
        eventClick: function(event, jsEvent, view) {
           $('#name').val(event.title);
-          $('#location).val(event.location);
+          $('#location').val(event.location);
           $('#description').val(event.description);
           $('#start_date').val(moment(event.start).format('YYYY/MM/DD HH:mm'));
           if(event.end) {
