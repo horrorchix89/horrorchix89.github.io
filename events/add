@@ -1,4 +1,4 @@
-<div id="add-new-entry" title="Add">
+<div class="modal fade" tabindex="-1" role="dialog" id="add-new-entry" title="Add">
 	<form action="/events/add" id="event_add" method="post">
     	<div class="row row-spacing">
         	<div class="col-md-12">
