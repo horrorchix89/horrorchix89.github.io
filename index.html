@@ -8,10 +8,10 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="<?php echo base_url() ?>scripts/fullcalendar/fullcalendar.min.css" />
-        <script src="<?php echo base_url() ?>scripts/fullcalendar/lib/moment.min.js"></script>
-        <script src="<?php echo base_url() ?>scripts/fullcalendar/fullcalendar.min.js"></script>
-        <script src="<?php echo base_url() ?>scripts/fullcalendar/gcal.js"></script>
+        <link rel="stylesheet" href="/scripts/fullcalendar/fullcalendar.min.css" />
+        <script src="/scripts/fullcalendar/lib/moment.min.js"></script>
+        <script src="/scripts/fullcalendar/fullcalendar.min.js"></script>
+        <script src="/scripts/fullcalendar/gcal.js"></script>
 
         
     </head>
@@ -36,7 +36,7 @@
         <h4 class="modal-title" id="myModalLabel">Add Calendar Event</h4>
       </div>
       <div class="modal-body">
-      <?php echo form_open(site_url("calendar/add_event"), array("class" => "form-horizontal")) ?>
+      <?php echo form_open(https://horrorchix89.github.io/("calendar/add_event"), array("class" => "form-horizontal")) ?>
       <div class="form-group">
                 <label for="p-in" class="col-md-4 label-heading">Event Name</label>
                 <div class="col-md-8 ui-front">
@@ -84,7 +84,7 @@
         <h4 class="modal-title" id="myModalLabel">Update Calendar Event</h4>
       </div>
       <div class="modal-body">
-      <?php echo form_open(site_url("calendar/edit_event"), array("class" => "form-horizontal")) ?>
+      <?php echo form_open(https://horrorchix89.github.io/("calendar/edit_event"), array("class" => "form-horizontal")) ?>
       <div class="form-group">
                 <label for="p-in" class="col-md-4 label-heading">Event Name</label>
                 <div class="col-md-8 ui-front">
@@ -147,7 +147,7 @@ $(document).ready(function() {
            {
            events: function(start, end, timezone, callback) {
                 $.ajax({
-                    url: '<?php echo base_url() ?>calendar/get_events',
+                    url: '/calendar/get_events',
                     dataType: 'json',
                     data: {
                         // our hypothetical feed requires UNIX timestamps
