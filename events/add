@@ -1,0 +1,251 @@
+<div id="add-new-entry" title="Add">
+	<form action="/events/add" id="event_add" method="post">
+    	<div class="row row-spacing">
+        	<div class="col-md-12">
+            	<input type="text" id="title" name="data[Event][title]" maxlength="100" placeholder="Name of Event" class="form-control required" />
+            </div>
+        </div>
+        <div class="row row-spacing">
+        	<div class="col-md-12 form-inline">
+            	<input type="text" name="data[Event][start_date]" size="9" value="2019-01-18" style="min-width: 115px" id="start_date" class="form-control required" />
+                <select name="data[Event][start_time]" style="min-width: 115px;" id="start_time" class="form-control">
+                	                    	<option value="00:00">12:00am</option>
+                        <option value="00:30">12:30am</option>
+                                        	<option value="01:00">01:00am</option>
+                        <option value="01:30">01:30am</option>
+                                        	<option value="02:00">02:00am</option>
+                        <option value="02:30">02:30am</option>
+                                        	<option value="03:00">03:00am</option>
+                        <option value="03:30">03:30am</option>
+                                        	<option value="04:00">04:00am</option>
+                        <option value="04:30">04:30am</option>
+                                        	<option value="05:00">05:00am</option>
+                        <option value="05:30">05:30am</option>
+                                        	<option value="06:00">06:00am</option>
+                        <option value="06:30">06:30am</option>
+                                        	<option value="07:00">07:00am</option>
+                        <option value="07:30">07:30am</option>
+                                        	<option value="08:00">08:00am</option>
+                        <option value="08:30">08:30am</option>
+                                        	<option value="09:00" selected="selected">09:00am</option>
+                        <option value="09:30">09:30am</option>
+                                        	<option value="10:00">10:00am</option>
+                        <option value="10:30">10:30am</option>
+                                        	<option value="11:00">11:00am</option>
+                        <option value="11:30">11:30am</option>
+                                        	<option value="12:00">12:00pm</option>
+                        <option value="12:30">12:30pm</option>
+                                        	<option value="13:00">01:00pm</option>
+                        <option value="13:30">01:30pm</option>
+                                        	<option value="14:00">02:00pm</option>
+                        <option value="14:30">02:30pm</option>
+                                        	<option value="15:00">03:00pm</option>
+                        <option value="15:30">03:30pm</option>
+                                        	<option value="16:00">04:00pm</option>
+                        <option value="16:30">04:30pm</option>
+                                        	<option value="17:00">05:00pm</option>
+                        <option value="17:30">05:30pm</option>
+                                        	<option value="18:00">06:00pm</option>
+                        <option value="18:30">06:30pm</option>
+                                        	<option value="19:00">07:00pm</option>
+                        <option value="19:30">07:30pm</option>
+                                        	<option value="20:00">08:00pm</option>
+                        <option value="20:30">08:30pm</option>
+                                        	<option value="21:00">09:00pm</option>
+                        <option value="21:30">09:30pm</option>
+                                        	<option value="22:00">10:00pm</option>
+                        <option value="22:30">10:30pm</option>
+                                        	<option value="23:00">11:00pm</option>
+                        <option value="23:30">11:30pm</option>
+                                    </select>
+                to
+                <input type="text" name="data[Event][end_date]" size="9" value="2019-01-18" style="min-width: 115px" id="end_date" class="form-control" />
+                <select name="data[Event][end_time]" style="min-width: 115px;" id="end_time" class="form-control">
+                	                    	<option value="00:00">12:00am</option>
+                        <option value="00:30">12:30am</option>
+                                        	<option value="01:00">01:00am</option>
+                        <option value="01:30">01:30am</option>
+                                        	<option value="02:00">02:00am</option>
+                        <option value="02:30">02:30am</option>
+                                        	<option value="03:00">03:00am</option>
+                        <option value="03:30">03:30am</option>
+                                        	<option value="04:00">04:00am</option>
+                        <option value="04:30">04:30am</option>
+                                        	<option value="05:00">05:00am</option>
+                        <option value="05:30">05:30am</option>
+                                        	<option value="06:00">06:00am</option>
+                        <option value="06:30">06:30am</option>
+                                        	<option value="07:00">07:00am</option>
+                        <option value="07:30">07:30am</option>
+                                        	<option value="08:00">08:00am</option>
+                        <option value="08:30">08:30am</option>
+                                        	<option value="09:00">09:00am</option>
+                        <option value="09:30">09:30am</option>
+                                        	<option value="10:00" selected="selected">10:00am</option>
+                        <option value="10:30">10:30am</option>
+                                        	<option value="11:00">11:00am</option>
+                        <option value="11:30">11:30am</option>
+                                        	<option value="12:00">12:00pm</option>
+                        <option value="12:30">12:30pm</option>
+                                        	<option value="13:00">01:00pm</option>
+                        <option value="13:30">01:30pm</option>
+                                        	<option value="14:00">02:00pm</option>
+                        <option value="14:30">02:30pm</option>
+                                        	<option value="15:00">03:00pm</option>
+                        <option value="15:30">03:30pm</option>
+                                        	<option value="16:00">04:00pm</option>
+                        <option value="16:30">04:30pm</option>
+                                        	<option value="17:00">05:00pm</option>
+                        <option value="17:30">05:30pm</option>
+                                        	<option value="18:00">06:00pm</option>
+                        <option value="18:30">06:30pm</option>
+                                        	<option value="19:00">07:00pm</option>
+                        <option value="19:30">07:30pm</option>
+                                        	<option value="20:00">08:00pm</option>
+                        <option value="20:30">08:30pm</option>
+                                        	<option value="21:00">09:00pm</option>
+                        <option value="21:30">09:30pm</option>
+                                        	<option value="22:00">10:00pm</option>
+                        <option value="22:30">10:30pm</option>
+                                        	<option value="23:00">11:00pm</option>
+                        <option value="23:30">11:30pm</option>
+                                    </select>                
+       		</div>
+		</div>
+        <div class="row row-spacing">
+        	<div class="col-md-12">
+            	<input type="checkbox" style="width: auto;" id="flag_all_day" name="data[Event][flag_all_day]" value="1" /> All Day
+            </div>
+        </div>
+        <div class="row row-spacing">        	
+            <div class="col-md-12">
+            	                	<a href="javascript:;" class="event-color" color="" style="background-color:"></a>
+                                	<a href="javascript:;" class="event-color" color="#5484ed" style="background-color:#5484ed"></a>
+                                	<a href="javascript:;" class="event-color" color="#a4bdfc" style="background-color:#a4bdfc"></a>
+                                	<a href="javascript:;" class="event-color" color="#46d6db" style="background-color:#46d6db"></a>
+                                	<a href="javascript:;" class="event-color" color="#7ae7bf" style="background-color:#7ae7bf"></a>
+                                	<a href="javascript:;" class="event-color" color="#51b749" style="background-color:#51b749"></a>
+                                	<a href="javascript:;" class="event-color" color="#fbd75b" style="background-color:#fbd75b"></a>
+                                	<a href="javascript:;" class="event-color" color="#ffb878" style="background-color:#ffb878"></a>
+                                	<a href="javascript:;" class="event-color" color="#ff887c" style="background-color:#ff887c"></a>
+                                	<a href="javascript:;" class="event-color" color="#dc2127" style="background-color:#dc2127"></a>
+                                	<a href="javascript:;" class="event-color" color="#dbadff" style="background-color:#dbadff"></a>
+                                	<a href="javascript:;" class="event-color" color="#e1e1e1" style="background-color:#e1e1e1"></a>
+                                <div class="clearfix"></div>
+            </div>
+     	</div>
+		<div class="row mrg15T">
+        	<div class="form-label col-md-12">
+            	<a class="btn btn-primary submit-button ladda-button" href="javascript:;" data-style="slide-left"><span class="button-content ladda-label">Save</span></a>   
+                <a class="btn btn-default cancel-button" href="javascript:;">Cancel</a>
+            </div>
+        </div>
+	</form>
+</div>
+  
+<script type="text/javascript">
+$('#event_add').validate({
+	submitHandler: function(form) {
+        var form_id = $(form).attr('id');
+        
+        var ladda_button = $(form).find('.ladda-button');
+        var submit_button = $('#' + form_id).find('a.submit-button');
+        if (ladda_button.length) var l = ladda_button.ladda();
+        
+        if (submit_button.hasClass('disabled')) return false;
+        
+        if (ladda_button.length) {
+            l.ladda('start');
+        } else {
+            submit_button.addClass('disabled').parent().append(loader_class);
+        }
+        
+		$(form).ajaxSubmit({
+			success: function(responseText) {
+                update_left_display_toolbar('schedule');
+                var responseJSON = $.parseJSON(responseText);
+                
+                if (responseJSON.success) {
+                    var t = responseJSON.data.Event.start_date.split(/[- :]/);
+                    var start_date = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
+                    console.log(start_date);
+                    var t = responseJSON.data.Event.end_date.split(/[- :]/);
+                    var end_date = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
+    
+                    var eventObject = {
+                        id: responseJSON.data.Event.id,
+                        title: responseJSON.data.Event.title, // use the element's text as the event title
+                        start: new Date(start_date.getFullYear(), start_date.getMonth(), start_date.getDate(), start_date.getHours(), start_date.getMinutes()),
+                        end: new Date(end_date.getFullYear(), end_date.getMonth(), end_date.getDate(), end_date.getHours(), end_date.getMinutes()),
+                        allDay: responseJSON.data.Event.flag_all_day,
+                        color: responseJSON.data.Event.color
+                    }
+                    
+                    $('#calendar').fullCalendar('renderEvent', eventObject, true);
+                    
+                    $('#empty_page_warning').hide();
+                    
+                    noty({text: 'Saved!'});
+                }
+                
+                $('.ui-dialog-content').dialog('close');
+			}
+		});
+	}
+});
+
+$( "#start_date" ).datepicker({
+  dateFormat: 'yy-mm-dd',
+  constrainInput: true,
+  defaultDate: "+1d",
+  changeMonth: true,
+  numberOfMonths: 2
+});
+$( "#end_date" ).datepicker({
+  dateFormat: 'yy-mm-dd',
+  constrainInput: true,
+  defaultDate: "+1d",
+  changeMonth: true,
+  numberOfMonths: 2
+});
+
+
+$('#start_time').change(function(e) {
+    if ($('#start_date').val() == $('#end_date').val()) {
+        if ($('#end_time').val() <= $('#start_time').val()) {
+            if ($('#start_time')[0].selectedIndex < 47) {
+                $('#end_time')[0].selectedIndex = $('#start_time')[0].selectedIndex + 1;
+            } else {
+                $('#end_time')[0].selectedIndex = $('#start_time')[0].selectedIndex;
+            }
+        }
+    }
+});
+
+$('#end_time').change(function(e) {
+    if ($('#start_date').val() == $('#end_date').val()) {
+        if ($('#end_time').val() <= $('#start_time').val()) {
+            if ($('#end_time')[0].selectedIndex > 0) {
+                $('#start_time')[0].selectedIndex = $('#end_time')[0].selectedIndex - 1;
+            } else {
+                $('#start_time')[0].selectedIndex = $('#end_time')[0].selectedIndex;
+            }
+        }
+    }
+});
+$('#flag_all_day').change(function(e) {
+    if($(this).prop('checked')) {
+        $('#start_time').hide();
+        $('#end_time').hide();
+    } else {
+        $('#start_time').show();
+        $('#end_time').show();
+    }
+});
+$('a.event-color').click(function(e) {
+    e.preventDefault();
+    $('#event_color').val($(this).attr('color'));
+    $('.event-color').removeClass('selected');
+    $(this).addClass('selected');
+});
+</script>
