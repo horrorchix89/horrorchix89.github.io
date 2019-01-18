@@ -10,7 +10,7 @@ class Calendar extends CI_Controller
 
     public function index() 
     {
-        $this->load->view("calendar/index.php", array());
+        $this->load->view("index.html", array());
     }
 
     public function get_events() 
