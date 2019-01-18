@@ -147,7 +147,7 @@ $(document).ready(function() {
            {
            events: function(start, end, timezone, callback) {
                 $.ajax({
-                    url: 'calendar/get_events',
+                    url: '<?php echo base_url() ?>calendar/get_events',
                     dataType: 'json',
                     data: {
                         // our hypothetical feed requires UNIX timestamps
