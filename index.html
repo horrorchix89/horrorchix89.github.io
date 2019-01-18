@@ -30,23 +30,23 @@
             </div>
     </div>
     </div>
-	    <div class="modal fade" tabindex="-1" role="dialog" id="add-new-entry" title="Add">
-		    <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Add Event</h4>
-        </div>
-        <div class="modal-body">
-	<form action="/events/add" id="event_add" method="post">
-    	<div class="row row-spacing">
-        	<div class="col-md-12">
-            	<input type="text" id="title" name="data[Event][title]" maxlength="100" placeholder="Name of Event" class="form-control required" />
-            </div>
+<div class="modal fade" tabindex="-1" role="dialog" id="add-new-entry" title="Add">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title" id="myModalLabel">Add Event</h4>
+    </div>
+    <div class="modal-body">
+      <form action="/events/add" id="event_add" method="post">
+        <div class="row row-spacing">
+          <div class="col-md-12">
+            <input type="text" id="title" name="data[Event][title]" maxlength="100" placeholder="Name of Event" class="form-control required" />
+          </div>
         </div>
         <div class="row row-spacing">
-        	<div class="col-md-12 form-inline">
-            	<input type="text" name="data[Event][start_date]" size="9" value="2019-01-18" style="min-width: 115px" id="start_date" class="form-control required" />
-                <select name="data[Event][start_time]" style="min-width: 115px;" id="start_time" class="form-control">
+          <div class="col-md-12 form-inline">
+            <input type="text" name="data[Event][start_date]" size="9" value="2019-01-18" style="min-width: 115px" id="start_date" class="form-control required" />
+            <select name="data[Event][start_time]" style="min-width: 115px;" id="start_time" class="form-control">
                 	                    	<option value="00:00">12:00am</option>
                         <option value="00:30">12:30am</option>
                                         	<option value="01:00">01:00am</option>
@@ -95,10 +95,9 @@
                         <option value="22:30">10:30pm</option>
                                         	<option value="23:00">11:00pm</option>
                         <option value="23:30">11:30pm</option>
-                                    </select>
-                to
-                <input type="text" name="data[Event][end_date]" size="9" value="2019-01-18" style="min-width: 115px" id="end_date" class="form-control" />
-                <select name="data[Event][end_time]" style="min-width: 115px;" id="end_time" class="form-control">
+                                    </select> to
+            <input type="text" name="data[Event][end_date]" size="9" value="2019-01-18" style="min-width: 115px" id="end_date" class="form-control" />
+            <select name="data[Event][end_time]" style="min-width: 115px;" id="end_time" class="form-control">
                 	                    	<option value="00:00">12:00am</option>
                         <option value="00:30">12:30am</option>
                                         	<option value="01:00">01:00am</option>
@@ -147,40 +146,38 @@
                         <option value="22:30">10:30pm</option>
                                         	<option value="23:00">11:00pm</option>
                         <option value="23:30">11:30pm</option>
-                                    </select>                
-       		</div>
-		</div>
+                                    </select>
+          </div>
+        </div>
         <div class="row row-spacing">
-        	<div class="col-md-12">
-            	<input type="checkbox" style="width: auto;" id="flag_all_day" name="data[Event][flag_all_day]" value="1" /> All Day
-            </div>
+          <div class="col-md-12">
+            <input type="checkbox" style="width: auto;" id="flag_all_day" name="data[Event][flag_all_day]" value="1" /> All Day
+          </div>
         </div>
-        <div class="row row-spacing">        	
-            <div class="col-md-12">
-            	                	<a href="javascript:;" class="event-color" color="" style="background-color:"></a>
-                                	<a href="javascript:;" class="event-color" color="#5484ed" style="background-color:#5484ed"></a>
-                                	<a href="javascript:;" class="event-color" color="#a4bdfc" style="background-color:#a4bdfc"></a>
-                                	<a href="javascript:;" class="event-color" color="#46d6db" style="background-color:#46d6db"></a>
-                                	<a href="javascript:;" class="event-color" color="#7ae7bf" style="background-color:#7ae7bf"></a>
-                                	<a href="javascript:;" class="event-color" color="#51b749" style="background-color:#51b749"></a>
-                                	<a href="javascript:;" class="event-color" color="#fbd75b" style="background-color:#fbd75b"></a>
-                                	<a href="javascript:;" class="event-color" color="#ffb878" style="background-color:#ffb878"></a>
-                                	<a href="javascript:;" class="event-color" color="#ff887c" style="background-color:#ff887c"></a>
-                                	<a href="javascript:;" class="event-color" color="#dc2127" style="background-color:#dc2127"></a>
-                                	<a href="javascript:;" class="event-color" color="#dbadff" style="background-color:#dbadff"></a>
-                                	<a href="javascript:;" class="event-color" color="#e1e1e1" style="background-color:#e1e1e1"></a>
-                                <div class="clearfix"></div>
-            </div>
-     	</div>
-		<div class="row mrg15T">
-        	<div class="form-label col-md-12">
-            	<a class="btn btn-primary submit-button ladda-button" href="javascript:;" data-style="slide-left"><span class="button-content ladda-label">Save</span></a>   
-                <a class="btn btn-default cancel-button" href="javascript:;">Cancel</a>
-            </div>
+        <div class="row row-spacing">
+          <div class="col-md-12">
+            <a href="javascript:;" class="event-color" color="" style="background-color:"></a>
+            <a href="javascript:;" class="event-color" color="#5484ed" style="background-color:#5484ed"></a>
+            <a href="javascript:;" class="event-color" color="#a4bdfc" style="background-color:#a4bdfc"></a>
+            <a href="javascript:;" class="event-color" color="#46d6db" style="background-color:#46d6db"></a>
+            <a href="javascript:;" class="event-color" color="#7ae7bf" style="background-color:#7ae7bf"></a>
+            <a href="javascript:;" class="event-color" color="#51b749" style="background-color:#51b749"></a>
+            <a href="javascript:;" class="event-color" color="#fbd75b" style="background-color:#fbd75b"></a>
+            <a href="javascript:;" class="event-color" color="#ffb878" style="background-color:#ffb878"></a>
+            <a href="javascript:;" class="event-color" color="#ff887c" style="background-color:#ff887c"></a>
+            <a href="javascript:;" class="event-color" color="#dc2127" style="background-color:#dc2127"></a>
+            <a href="javascript:;" class="event-color" color="#dbadff" style="background-color:#dbadff"></a>
+            <a href="javascript:;" class="event-color" color="#e1e1e1" style="background-color:#e1e1e1"></a>
+            <div class="clearfix"></div>
+          </div>
         </div>
-	</form>
-			    </div>
-		    </div>
+      </form>
+      <div class="modal-footer">
+        <a class="btn btn-primary submit-button ladda-button" href="javascript:;" data-style="slide-left"><span class="button-content ladda-label">Save</span></a>
+        <a class="btn btn-default cancel-button" href="javascript:;">Cancel</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript">
